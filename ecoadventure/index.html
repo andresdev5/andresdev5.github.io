@@ -1,13 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EcoAdventure</title>
+    <title>Ecoaventura - Descubre la naturaleza</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <h1>EcoAdventure</h1>
-    <span>[Inserte aqui un landing exitoso]</span>
+
+<body class="bg-emerald-50 flex flex-col h-screen">
+    <header class="bg-white py-4">
+        <div class="px-8">
+            <nav class="flex items-center justify-between">
+                <a href="./index.html" class="text-green-500 font-semibold text-2xl">Ecoaventura</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="grow min-h-fit">
+        <div class="bg-emerald-500 flex flex-row px-8 py-16">
+            <div class="mr-40">
+                <!-- image -->
+                <img style="width: 80rem" class="rounded drop-shadow-md"
+                    src="https://res.cloudinary.com/worldpackers/image/upload/c_fill,f_auto,q_auto,w_1024/v1/guides/article_cover/bjkt4tjrf6dmseu1xnua"
+                    alt="hero">
+            </div>
+            <div class="grow">
+                <h1 class="text-6xl font-semibold text-white">Explora con Ecoaventura</h1>
+                <p class="text-white mt-4 opacity-90 mw-3">
+                    Sumérgete en un mundo de aventuras y descubrimientos en la naturaleza con Ecoaventura. Nuestra
+                    aplicación te ofrece la oportunidad de explorar destinos increíbles, reservar emocionantes
+                    actividades al aire libre y vivir experiencias únicas en contacto directo con la naturaleza.
+                </p>
+                <p class="text-white mt-4 opacity-90 mw-3">
+                    Con Ecoaventura, podrás adentrarte en parques nacionales, explorar senderos escénicos, disfrutar de
+                    emocionantes deportes acuáticos y descubrir lugares secretos fuera de los caminos trillados. Ya sea
+                    que busques una caminata en la montaña, un paseo en kayak por un río salvaje o un encuentro cercano
+                    con la vida silvestre, nuestra aplicación te conectará con las mejores opciones en tu área.
+                </p>
+            </div>
+        </div>
+        <div class="mx-auto grid max-w-8xl  grid-cols-1 gap-8 px-24 py-24 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+            <article class="rounded-xl bg-white p-3 shadow-md">
+                <a href="#">
+                    <div class="justify-center items-center flex items-end overflow-hidden rounded-xl max-h-40">
+                        <img src="https://images.unsplash.com/photo-1568849676085-51415703900f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
+                            alt="Hotel Photo" />
+                    </div>
+                    <div class="mt-1 p-2">
+                        <h2 class="text-slate-700 text-lg font-bold">Viaja a varios lugares!</h2>
+                        <p class="mt-1 text-sm text-slate-500">EcoAdventure muestra una gran variedad de lugares por
+                            conocer</p>
+                    </div>
+                </a>
+            </article>
+            <article class="rounded-xl bg-white p-3 shadow-md">
+                <a href="#">
+                    <div class="justify-center items-center flex items-end overflow-hidden rounded-xl max-h-40">
+                        <img src="https://images.unsplash.com/photo-1548345680-f5475ea5df84?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1173&q=80"
+                            alt="Hotel Photo" />
+                    </div>
+                    <div class="mt-1 p-2">
+                        <h2 class="text-slate-700 text-lg font-bold">Revisa reseñas</h2>
+                        <p class="mt-1 text-sm text-slate-500">EcoAdventure te permite calificar tu viaje y obtener
+                            información de otros usuarios sobre un lugar</p>
+                    </div>
+                </a>
+            </article>
+            <article class="rounded-xl bg-white p-3 shadow-md">
+                <a href="#">
+                    <div class="justify-center items-center flex items-end overflow-hidden rounded-xl max-h-40">
+                        <img src="https://plus.unsplash.com/premium_photo-1676139858827-80cae2b07972?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                            alt="Hotel Photo" />
+                    </div>
+                    <div class="mt-1 p-2">
+                        <h2 class="text-slate-700 text-lg font-bold">Conoce sitios turisticos</h2>
+                        <p class="mt-1 text-sm text-slate-500">La aplicación te permite revisar sitios turisticos con información ambiental</p>
+                    </div>
+                </a>
+            </article>
+            <article class="rounded-xl bg-white p-3 shadow-md">
+                <a href="#">
+                    <div class="justify-center items-center flex items-end overflow-hidden rounded-xl max-h-40">
+                        <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                            alt="Hotel Photo" />
+                    </div>
+                    <div class="mt-1 p-2">
+                        <h2 class="text-slate-700 text-lg font-bold">Visita hoteles y restaurantes</h2>
+                        <p class="mt-1 text-sm text-slate-500">Nuestro sistema de partners te permitirá obtener una lista de restaurantes y hoteles cercanos que se ajusten a tu medida</p>
+                    </div>
+                </a>
+            </article>
+        </div>
+    </main>
+
+    <footer class="bg-emerald-800 py-8">
+        <div class="px-4 text-white">
+            <p>&copy; 2023 Ecoaventura</p>
+        </div>
+    </footer>
+    <script src="./index.js"></script>
 </body>
+
 </html>
