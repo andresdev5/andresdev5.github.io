@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ecoaventura - Descubre la naturaleza</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body class="bg-emerald-50 flex flex-col h-screen">
@@ -13,19 +14,25 @@
         <div class="px-8">
             <nav class="flex items-center justify-between">
                 <a href="./index.html" class="text-green-500 font-semibold text-2xl">Ecoaventura</a>
+                <div class="self-end">
+                    <!-- register button -->
+                    <a href="./index.html#register"
+                        class="inline-block bg-emerald-500 text-white font-semibold px-6 py-2 rounded-md shadow-md">Regístrate</a>
+                    <!-- login button -->
+                </div>
             </nav>
         </div>
     </header>
 
     <main class="grow min-h-fit">
         <div class="bg-emerald-500 flex flex-row px-8 py-16">
-            <div class="mr-40">
+            <div class="px-20 flex justify-center items-center">
                 <!-- image -->
-                <img style="width: 80rem" class="rounded drop-shadow-md"
-                    src="https://res.cloudinary.com/worldpackers/image/upload/c_fill,f_auto,q_auto,w_1024/v1/guides/article_cover/bjkt4tjrf6dmseu1xnua"
+                <img style="width: 50rem; margin-top: -1em;" class="rounded drop-shadow-lg"
+                    src="./assets/wireframe.png"
                     alt="hero">
             </div>
-            <div class="grow">
+            <div class="grow flex flex-col">
                 <h1 class="text-6xl font-semibold text-white">Explora con Ecoaventura</h1>
                 <p class="text-white mt-4 opacity-90 mw-3">
                     Sumérgete en un mundo de aventuras y descubrimientos en la naturaleza con Ecoaventura. Nuestra
@@ -35,9 +42,20 @@
                 <p class="text-white mt-4 opacity-90 mw-3">
                     Con Ecoaventura, podrás adentrarte en parques nacionales, explorar senderos escénicos, disfrutar de
                     emocionantes deportes acuáticos y descubrir lugares secretos fuera de los caminos trillados. Ya sea
-                    que busques una caminata en la montaña, un paseo en kayak por un río salvaje o un encuentro cercano
+                    que busques una caminata en la montaña, un paseo por un río salvaje o un encuentro cercano
                     con la vida silvestre, nuestra aplicación te conectará con las mejores opciones en tu área.
                 </p>
+
+                <!-- align to bottom -->
+                <div class="mt-auto mb-3">
+                    <!-- button google play -->
+                    <div class="inline-block">
+                        <a href="#" class="flex flex-row bg-white text-emerald-500 font-semibold px-6 py-3 rounded-full shadow-md">
+                            <i class="mr-3 mt-1 fab fa-google-play fa"></i>
+                            <span>Descargar en Google Play</span>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="mx-auto grid max-w-8xl  grid-cols-1 gap-8 px-24 py-24 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
@@ -91,6 +109,37 @@
                     </div>
                 </a>
             </article>
+        </div>
+
+        <!-- signup form -->
+        <div id="register" class="bg-white flex flex-col py-8 px-8 m-24 mx-auto rounded-md border border-emerald-300 drop-shadow-sm" style="max-width: 500px">
+            <h2 class="text-4xl font-semibold text-slate-700">Regístrate</h2>
+            <p class="text-slate-500 mt-2">Crea una cuenta para empezar a disfrutar de Ecoaventura</p>
+            <div class="mt-8">
+                <form action="./index.html" method="POST" class="flex flex-col">
+                    <div class="flex flex-col">
+                        <div class="flex flex-col mb-4">
+                            <label for="name" class="text-slate-500 font-medium">Nombre de usuario</label>
+                            <input type="text" name="name" id="name" class="px-4 py-2 rounded-md shadow-sm border border-solid border-gray-400">
+                        </div>
+                        <div class="flex flex-col mb-4">
+                            <label for="email" class="text-slate-500 font-medium">Correo electrónico</label>
+                            <input type="email" name="email" id="email" class="px-4 py-2 rounded-md shadow-sm border border-solid border-gray-400">
+                        </div>
+                        <div class="flex flex-col mb-4">
+                            <label for="password" class="text-slate-500 font-medium">Contraseña</label>
+                            <input type="password" name="password" id="password" class="px-4 py-2 rounded-md shadow-sm border border-solid border-gray-400">
+                        </div>
+                        <div class="flex flex-col mb-4">
+                            <label for="password_confirmation" class="text-slate-500 font-medium">Confirmar contraseña</label>
+                            <input type="password" name="password_confirmation" id="password_confirmation" class="px-4 py-2 rounded-md shadow-sm border border-solid border-gray-400">
+                        </div>
+                    </div>
+                    <div class="mt-8 flex flex-row justify-end">
+                        <button type="submit" class="bg-emerald-500 text-white font-semibold px-6 py-2 rounded-lg shadow-md">Registrarse</button>
+                    </div>
+                </form>
+            </div>
         </div>
     </main>
 
